@@ -1,0 +1,28 @@
+﻿<div>
+    <p>
+        <a href="/product/add">
+            <span class="fa fa-plus"></span>Add Product
+        </a>
+    </p>
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="product in models.products">
+                <td><input type="text"  data-ng-required="true" data-ng-model="product.name" data-ng-blur="function.updateProduct($index, product)" /></td>
+                <td><input type="text" data-ng-required="true" data-ng-model="product.type" data-ng-blur="function.updateProduct($index, product)"/></td>
+                <td><input type="text" data-ng-required="true" data-ng-model="product.shortDesc" data-ng-blur="function.updateProduct($index, product)" /></td>
+                <td>
+                    <p>
+                        <a href="#" data-ng-click="function.deleteProduct($index, product)">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

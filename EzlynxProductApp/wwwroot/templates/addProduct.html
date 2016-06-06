@@ -1,0 +1,19 @@
+﻿<form class="form-horizontal col-md-6" data-ng-submit="function.addNewProduct()" name="addProductForm" novalidate>
+    <fieldset>
+        <legend>Add Product</legend>
+        <div class="form-group">
+            <label for="nameInput">Enter Product Name</label>
+            <input id="nameInput" data-ng-required="true" placeholder="Enter Product Name" type="text" class="form-control" data-ng-model="models.addProduct.name" ></input>
+        </div>
+        <div class="form-group">
+            <label for="typeInput">Enter Product Type</label>
+            <input id="typeInput" data-ng-required="true" placeholder="Total Product Type" type="text" class="form-control" data-ng-model="models.addProduct.type"></input>
+        </div>
+        <div class="form-group">
+            <label for="shortDescInput">Enter Short Description</label>
+            <input id="shortDescInput" data-ng-required="true" placeholder="Enter Short Description" type="text" class="form-control" data-ng-model="models.addProduct.shortDesc"></input>
+        </div>
+        <button id="addProductButton" data-ng-disabled="addProductForm.$invalid" class="btn btn-default" type="submit" >Add Product</button>
+        <button href="/" >Cancel</button>
+    </fieldset>
+</form>

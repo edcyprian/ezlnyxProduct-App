@@ -1,0 +1,8 @@
+﻿{
+    "AppSettings": {
+        "SiteTitle": "Quotes"
+    },
+    "Data": {
+        "ConnectionString": "Server=ezlynxproduct.db.10532477.hostedresource.com;Database=ezlynxproduct;User Id=ezlynxproduct;Password=web#Product1;"
+    }
+}
